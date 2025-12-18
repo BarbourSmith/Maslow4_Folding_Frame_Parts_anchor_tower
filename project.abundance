@@ -373,8 +373,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6375404530744336,
-      "y": 0.21709006928406466,
+      "x": 0.6071428571428572,
+      "y": 0.21727019498607245,
       "uniqueID": "id-1233"
     },
     {
@@ -535,8 +535,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.7330097087378641,
-      "y": 0.3510392609699769,
+      "x": 0.6884920634920635,
+      "y": 0.33704735376044564,
       "uniqueID": "id-1439"
     },
     {
@@ -557,8 +557,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.7723840345199569,
-      "y": 0.33718244803695147,
+      "x": 0.7539682539682541,
+      "y": 0.36211699164345407,
       "uniqueID": "id-1448",
       "ioValues": [
         {
@@ -585,14 +585,14 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.7238403451995685,
-      "y": 0.14318706697459585,
+      "x": 0.6633597883597884,
+      "y": 0.14484679665738162,
       "uniqueID": "id-1457"
     },
     {
       "atomType": "Extrude",
-      "x": 0.7718446601941747,
-      "y": 0.14318706697459585,
+      "x": 0.7645502645502645,
+      "y": 0.12534818941504178,
       "uniqueID": "id-1461",
       "ioValues": [
         {
@@ -623,8 +623,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.8154761904761905,
-      "y": 0.3565459610027855,
+      "x": 0.8082010582010583,
+      "y": 0.3983286908077995,
       "uniqueID": "id-1471",
       "ioValues": [
         {
@@ -975,8 +975,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6796116504854368,
-      "y": 0.19630484988452657,
+      "x": 0.6355820105820106,
+      "y": 0.3593314763231198,
       "uniqueID": "id-1740"
     },
     {
@@ -1052,8 +1052,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2195767195767196,
-      "y": 0.40111420612813375,
+      "x": 0.22023809523809526,
+      "y": 0.36211699164345407,
       "uniqueID": "id-2205",
       "name": "My Take",
       "ioValues": [
@@ -1081,7 +1081,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "y": 0.8133704735376045,
           "uniqueID": "id-2209",
           "name": "Bolt2Diameter",
           "type": "number"
@@ -1089,7 +1089,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "y": 0.233983286908078,
           "uniqueID": "id-2212",
           "name": "BitDiameter",
           "type": "number"
@@ -1097,17 +1097,23 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "y": 0.3565459610027855,
           "uniqueID": "id-2215",
           "name": "WoodThick",
           "type": "number"
         },
         {
           "atomType": "Molecule",
-          "x": 0.251984126984127,
-          "y": 0.6518105849582172,
+          "x": 0.15211640211640212,
+          "y": 0.5459610027855153,
           "uniqueID": "id-2222",
           "name": "Plate",
+          "ioValues": [
+            {
+              "name": "WoodThick",
+              "ioValue": 19.8
+            }
+          ],
           "topLevel": false,
           "allAtoms": [
             {
@@ -1118,8 +1124,8 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.30158730158730157,
-              "y": 0.5738161559888579,
+              "x": 0.14484126984126983,
+              "y": 0.3175487465181059,
               "uniqueID": "id-2226",
               "ioValues": [
                 {
@@ -1133,13 +1139,409 @@
                   "currentEquation": "154.6"
                 }
               ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.1078042328042328,
+              "y": 0.7855153203342619,
+              "uniqueID": "id-2230",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 100,
+                  "currentEquation": "100"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 59,
+                  "currentEquation": "59"
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.3181216931216931,
+              "y": 0.4094707520891365,
+              "uniqueID": "id-2234"
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.5410052910052909,
+              "y": 0.1615598885793872,
+              "uniqueID": "id-2244",
+              "ioValues": [
+                {
+                  "name": "height",
+                  "ioValue": 19.8
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-2248",
+              "name": "WoodThick",
+              "type": "number"
             }
           ],
-          "allConnectors": [],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry1",
+              "ap1ID": "id-2226",
+              "ap2ID": "id-2234"
+            },
+            {
+              "ap2Name": "geometry2",
+              "ap1ID": "id-2230",
+              "ap2ID": "id-2234"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2234",
+              "ap2ID": "id-2244"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-2244",
+              "ap2ID": "id-2224"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-2248",
+              "ap2ID": "id-2244"
+            }
+          ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Move",
+          "x": 0.1798941798941799,
+          "y": 0.3788300835654596,
+          "uniqueID": "id-2251",
+          "ioValues": [
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 19.8
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.30687830687830686,
+          "y": 0.37325905292479106,
+          "uniqueID": "id-2257",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.20105820105820105,
+          "y": 0.2256267409470752,
+          "uniqueID": "id-2262",
+          "ioValues": [
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 19.8
+            }
+          ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.1746031746031746,
+          "y": 0.8161559888579387,
+          "uniqueID": "id-2269",
+          "name": "Bolt",
+          "ioValues": [
+            {
+              "name": "Bolt2Diameter",
+              "ioValue": 6.4
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-2271"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-2273",
+              "name": "Bolt2Diameter",
+              "type": "number"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.25132275132275134,
+              "y": 0.3899721448467966,
+              "uniqueID": "id-2276",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 6.4
+                }
+              ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.12037037037037036,
+              "y": 0.7743732590529249,
+              "uniqueID": "id-2279",
+              "name": "D+1",
+              "ioValues": [
+                {
+                  "name": "D",
+                  "ioValue": 6.4
+                }
+              ],
+              "currentEquation": "D+1"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.2466931216931217,
+              "y": 0.7270194986072424,
+              "uniqueID": "id-2284",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 7.4
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3511904761904762,
+              "y": 0.6824512534818942,
+              "uniqueID": "id-2287",
+              "ioValues": [
+                {
+                  "name": "height",
+                  "ioValue": 30,
+                  "currentEquation": "30"
+                }
+              ]
+            },
+            {
+              "atomType": "Color",
+              "x": 0.5132275132275133,
+              "y": 0.5682451253481894,
+              "uniqueID": "id-2291",
+              "selectedColor": "Keep Out"
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3644179894179894,
+              "y": 0.34261838440111425,
+              "uniqueID": "id-2294",
+              "ioValues": [
+                {
+                  "name": "height",
+                  "ioValue": 30
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.5985449735449735,
+              "y": 0.3899721448467966,
+              "uniqueID": "id-2298",
+              "ioValues": [
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 3",
+                  "ioValue": null
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "diameter",
+              "ap1ID": "id-2273",
+              "ap2ID": "id-2276"
+            },
+            {
+              "ap2Name": "D",
+              "ap1ID": "id-2273",
+              "ap2ID": "id-2279"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2276",
+              "ap2ID": "id-2294"
+            },
+            {
+              "ap2Name": "diameter",
+              "ap1ID": "id-2279",
+              "ap2ID": "id-2284"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2284",
+              "ap2ID": "id-2287"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2287",
+              "ap2ID": "id-2291"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-2291",
+              "ap2ID": "id-2298"
+            },
+            {
+              "ap2Name": "Shape 3",
+              "ap1ID": "id-2294",
+              "ap2ID": "id-2298"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-2298",
+              "ap2ID": "id-2271"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Move",
+          "x": 0.3412698412698413,
+          "y": 0.7242339832869081,
+          "uniqueID": "id-2304",
+          "ioValues": [
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.5667989417989419,
+          "y": 0.5153203342618384,
+          "uniqueID": "id-2310",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "Bolt2Diameter",
+          "ap1ID": "id-2209",
+          "ap2ID": "id-2269"
+        },
+        {
+          "ap2Name": "WoodThick",
+          "ap1ID": "id-2215",
+          "ap2ID": "id-2222"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-2215",
+          "ap2ID": "id-2251"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-2215",
+          "ap2ID": "id-2262"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2222",
+          "ap2ID": "id-2251"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-2222",
+          "ap2ID": "id-2257"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-2251",
+          "ap2ID": "id-2257"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2251",
+          "ap2ID": "id-2262"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-2257",
+          "ap2ID": "id-2310"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-2262",
+          "ap2ID": "id-2257"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2269",
+          "ap2ID": "id-2304"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-2304",
+          "ap2ID": "id-2310"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-2310",
+          "ap2ID": "id-2207"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
