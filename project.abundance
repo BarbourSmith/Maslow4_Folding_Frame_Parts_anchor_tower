@@ -28,32 +28,32 @@
     },
     {
       "atomType": "Input",
-      "x": 0.01815,
-      "y": 0.10999999999999999,
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
       "uniqueID": "id-16",
       "name": "WoodThick",
       "type": "number"
     },
     {
       "atomType": "Input",
-      "x": 0.01815,
-      "y": 0.176,
+      "x": 0.025384615384615384,
+      "y": 0.24615384615384617,
       "uniqueID": "id-21",
       "name": "BitDiameter",
       "type": "number"
     },
     {
       "atomType": "Input",
-      "x": 0.01815,
-      "y": 0.242,
+      "x": 0.025384615384615384,
+      "y": 0.3384615384615385,
       "uniqueID": "id-24",
       "name": "Bolt2Diameter",
       "type": "number"
     },
     {
       "atomType": "Constant",
-      "x": 0.039374325782092774,
-      "y": 0.5565819861431871,
+      "x": 0.021164021164021163,
+      "y": 0.47075208913649025,
       "uniqueID": "id-44",
       "name": "AnchorDimension",
       "value": 100
@@ -323,8 +323,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.1699029126213592,
-      "y": 0.15473441108545033,
+      "x": 0.17724867724867727,
+      "y": 0.21727019498607245,
       "uniqueID": "id-1106",
       "name": "x + 60+100",
       "ioValues": [
@@ -337,8 +337,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.6057173678532902,
-      "y": 0.13163972286374134,
+      "x": 0.5515873015873016,
+      "y": 0.15041782729805014,
       "uniqueID": "id-1110",
       "ioValues": [
         {
@@ -379,8 +379,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.17259978425026967,
-      "y": 0.2632794457274827,
+      "x": 0.2533068783068783,
+      "y": 0.23676880222841226,
       "uniqueID": "id-1237",
       "name": ".5*x",
       "ioValues": [
@@ -623,8 +623,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.8144552319309601,
-      "y": 0.3325635103926097,
+      "x": 0.8154761904761905,
+      "y": 0.3565459610027855,
       "uniqueID": "id-1471",
       "ioValues": [
         {
@@ -643,8 +643,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8592233009708738,
-      "y": 0.22632794457274827,
+      "x": 0.8591269841269841,
+      "y": 0.22841225626740946,
       "uniqueID": "id-1477",
       "ioValues": [
         {
@@ -1049,6 +1049,98 @@
       "name": "README",
       "readMeText": "Sliding anchor block for a foldable frame Could be used as an anchor on it's own.  Double sided just because I like symmetry and wanted it to feel sturdy on both sides when moving it.  Pin holes across it are for the stagged array in the anchor tower. each one should correspond a change of 5mm",
       "global": true
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2195767195767196,
+      "y": 0.40111420612813375,
+      "uniqueID": "id-2205",
+      "name": "My Take",
+      "ioValues": [
+        {
+          "name": "Bolt2Diameter",
+          "ioValue": 6.4
+        },
+        {
+          "name": "BitDiameter",
+          "ioValue": 6.4
+        },
+        {
+          "name": "WoodThick",
+          "ioValue": 19.8
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-2207"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-2209",
+          "name": "Bolt2Diameter",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-2212",
+          "name": "BitDiameter",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-2215",
+          "name": "WoodThick",
+          "type": "number"
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.251984126984127,
+          "y": 0.6518105849582172,
+          "uniqueID": "id-2222",
+          "name": "Plate",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-2224"
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.30158730158730157,
+              "y": 0.5738161559888579,
+              "uniqueID": "id-2226",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 260,
+                  "currentEquation": "260"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 154.6,
+                  "currentEquation": "154.6"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -1088,6 +1180,11 @@
       "ap2ID": "id-1487"
     },
     {
+      "ap2Name": "WoodThick",
+      "ap1ID": "id-16",
+      "ap2ID": "id-2205"
+    },
+    {
       "ap2Name": "diameter",
       "ap1ID": "id-21",
       "ap2ID": "id-95"
@@ -1098,6 +1195,11 @@
       "ap2ID": "id-143"
     },
     {
+      "ap2Name": "BitDiameter",
+      "ap1ID": "id-21",
+      "ap2ID": "id-2205"
+    },
+    {
       "ap2Name": "y length",
       "ap1ID": "id-24",
       "ap2ID": "id-1088"
@@ -1106,6 +1208,11 @@
       "ap2Name": "x length",
       "ap1ID": "id-24",
       "ap2ID": "id-1088"
+    },
+    {
+      "ap2Name": "Bolt2Diameter",
+      "ap1ID": "id-24",
+      "ap2ID": "id-2205"
     },
     {
       "ap2Name": "x",
